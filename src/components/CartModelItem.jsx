@@ -13,16 +13,20 @@ const CartModelItem = ({ item, active }) => {
         showToast
       } = useActions();
     
-const addToCartAction = (variantId, count) => {
-      addToCart({
-        lineItems: [
-            {
-                variantId: variantId.toString(),
-                quantity: count
-            },
-        ],
-    })
-}
+// const addToCartAction = (variantId, count) => {
+//       addToCart({
+//         lineItems: [
+//             {
+//                 variantId: variantId.toString(),
+//                 quantity: count
+//             }
+//         ]
+//     })
+// }
+
+  const openProductAction = (productId) => {
+    openProduct({ productId: productId.toString() });
+  };
 
     const [count, setCount] = useState(1)
     return (
@@ -50,7 +54,8 @@ const addToCartAction = (variantId, count) => {
                         </div>
                        <button className="add_to_cart" onClick={() => {
                             console.log({ id: item, count })
-                            addToCartAction(item.variant_id, count)
+                            //addToCartAction(item.variant_id, count)
+                            openProductAction(item.product_id)
                         }}>add to cart</button>
                     </div>
                 </div>
