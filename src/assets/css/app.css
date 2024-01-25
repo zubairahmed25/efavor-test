@@ -9,8 +9,8 @@ body {
 }
 
 .container {
-  width: 1140px;
-  max-width: 100%;
+  max-width: 1140px;
+  width: 100%;
   margin: auto;
 }
 
@@ -547,7 +547,7 @@ width: 100%;
   }
 @media (max-width: 1200px) {
   .container {
-    width: 960px;
+    max-width: 960px;
   }
 }
 
@@ -559,11 +559,11 @@ width: 100%;
   padding: 6px !important;
 }
   .container {
-    width: 700px;
+    max-width: 700px;
   }
 
   .love_banner .search {
-    width: 83.33%;
+    width: 100%;
   }
 
   .flex {
@@ -593,7 +593,7 @@ width: 100%;
 
 @media(max-width: 768px) {
     .container {
-        width: 510px;
+        max-width: 510px;
     }
 .search-input-wrapper{
     max-width: 100%;
@@ -615,7 +615,7 @@ width: 100%;
     .model_items_box .box_img {
       cursor: pointer;
       font-size: 0;
-      width: 128px;
+      width: 90px;
     }
     .model{
       padding: 10px;
@@ -628,7 +628,7 @@ width: 100%;
 
 @media (max-width: 768px) {
   .container {
-    width: 510px;
+    max-width: 510px;
   }
   .model{
     padding: 0px;
@@ -677,9 +677,9 @@ width: 100%;
     width: calc(100% / 2 - 0.6rem);
   }
 
-  .category {
+  /* .category {
     padding: 0 1.5rem;
-  }
+  } */
 
   .category .category_box {
     min-width: 120px;

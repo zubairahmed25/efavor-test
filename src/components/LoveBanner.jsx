@@ -10,8 +10,8 @@ function LoveBanner() {
         <img src={LoveImg} alt="LoveImg" className="loveImg" onClick={() => {
           navigate(`/category?id=83&tag=&search=&page=1&look=&skus=&labels=`)
         }} />
-        <div style={{ zIndex: 2 }}>
-          <p>A Symphony of Love</p>
+        <div style={{ zIndex: 2, width: "100%", maxWidth: "80%" }}>
+          <p style={{ textAlign: "center" }}>A Symphony of Love</p>
           <div className="search">
             <input type="text" placeholder="style, event, occasion..." ref={ref} />
             <button type='button' onClick={() => {

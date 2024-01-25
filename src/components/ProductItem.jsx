@@ -1,7 +1,11 @@
 import PropTypes from 'prop-types';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+
+
 const ProductItem = ({ product }) => {
+
     return (
         <Link to={`/category/${product.id}`} className="card">
             <img src={product.image_url} alt={product.title} />
