@@ -8,6 +8,9 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+input {
+  outline: none;
+}
 .container {
   max-width: 1140px;
   width: 100%;
@@ -49,6 +52,7 @@ body {
 .category .category_box {
     width: calc(100% / 5 - 1rem);
     text-decoration: none;
+    max-height:150px;
 }
 
 .category .category_box img {
