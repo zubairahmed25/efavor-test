@@ -8,7 +8,6 @@ const CartModelItem = ({ item, active }) => {
         addToCart,
         openProduct,
         openCollection,
-        applyDiscount,
         removeDiscounts,
         showToast
       } = useActions();
